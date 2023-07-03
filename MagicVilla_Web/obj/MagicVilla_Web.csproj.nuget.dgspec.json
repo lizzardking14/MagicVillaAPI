@@ -109,7 +109,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[7.0.6, )"
+              "version": "[7.0.7, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
