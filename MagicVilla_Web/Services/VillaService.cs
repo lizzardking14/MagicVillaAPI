@@ -65,5 +65,16 @@ namespace MagicVilla_Web.Services
                 Token = token
             });
         }
+
+        public Task<T> ObtenerTodosPaginado<T>(string token, int pageNumber=1,int pageSize=4)
+        {
+            return SendAsync<T>(new APIRequest()
+            {
+                APITipo = DS.APITipo.GET,
+                Url = _villaUrl + "/api/v1/Villa/VillasPaginado",
+                Token = token,
+                Parametros=new Parametros() { PageNumbre=pageNumber,PageSize=pageSize } 
+            });
+        }
     }
 }
