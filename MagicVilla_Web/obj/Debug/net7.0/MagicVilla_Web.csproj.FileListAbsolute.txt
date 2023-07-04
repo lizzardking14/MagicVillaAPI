@@ -225,3 +225,8 @@ C:\Users\j_jso\source\repos\MagicVilla\MagicVilla_Web\bin\Debug\net7.0\vi\Humani
 C:\Users\j_jso\source\repos\MagicVilla\MagicVilla_Web\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
 C:\Users\j_jso\source\repos\MagicVilla\MagicVilla_Web\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
 C:\Users\j_jso\source\repos\MagicVilla\MagicVilla_Web\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+C:\Users\j_jso\source\repos\MagicVilla\MagicVilla_Web\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\j_jso\source\repos\MagicVilla\MagicVilla_Web\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\j_jso\source\repos\MagicVilla\MagicVilla_Web\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\j_jso\source\repos\MagicVilla\MagicVilla_Web\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\j_jso\source\repos\MagicVilla\MagicVilla_Web\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
