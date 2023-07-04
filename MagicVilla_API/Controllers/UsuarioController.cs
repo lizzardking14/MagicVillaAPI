@@ -8,8 +8,9 @@ using System.Runtime.InteropServices;
 
 namespace MagicVilla_API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
+    [ApiVersionNeutral]
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioRepositorio _usuarioRepo;
@@ -24,7 +25,7 @@ namespace MagicVilla_API.Controllers
         public async Task<IActionResult> Login([FromBody] LoginRequestDTO modelo)
         {
             var loginResponse = await _usuarioRepo.Login(modelo);
-            if (loginResponse == null || string.IsNullOrEmpty(loginResponse.Token)) 
+            if (loginResponse == null || string.IsNullOrEmpty(loginResponse.Token))
             {
                 _response.statusCode = HttpStatusCode.BadRequest;
                 _response.IsExitoso = false;
@@ -33,7 +34,7 @@ namespace MagicVilla_API.Controllers
             }
             _response.IsExitoso = true;
             _response.statusCode = HttpStatusCode.OK;
-            _response.Resultado=loginResponse;
+            _response.Resultado = loginResponse;
             return Ok(_response);
         }
 
@@ -57,7 +58,7 @@ namespace MagicVilla_API.Controllers
                 _response.ErrorMessages.Add("Error al resgistrar Usuario!");
                 return BadRequest(_response);
             }
-            _response.statusCode=HttpStatusCode.OK;
+            _response.statusCode = HttpStatusCode.OK;
             _response.IsExitoso = true;
             return Ok(_response);
         }

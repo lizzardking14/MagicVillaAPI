@@ -63,7 +63,7 @@ namespace MagicVilla_Web.Services
                 try
                 {
                     APIResponse response = JsonConvert.DeserializeObject<APIResponse>(apiContent);
-                    if (apiResponse.StatusCode== HttpStatusCode.BadRequest || apiResponse.StatusCode==HttpStatusCode.NotFound)
+                    if (response !=null && (apiResponse.StatusCode== HttpStatusCode.BadRequest || apiResponse.StatusCode==HttpStatusCode.NotFound))
                     {
                         response.statusCode = HttpStatusCode.BadRequest;
                         response.IsExitoso = false;
